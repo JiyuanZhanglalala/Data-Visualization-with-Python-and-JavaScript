@@ -1,0 +1,22 @@
+Similarities and Differences
+Syntax differences aside, Python and JavaScript actually have a lot in common. After a short while, switching between them can be almost seamless.1 Let’s compare the two from a data visualizer’s perspective:
+
+These are the chief similarities:
+
+They both work without needing a compilation step (i.e., they are interpreted).
+You can use both with an interactive interpreter, which means you can type in lines of code and see the results right away.
+Both have garbage collection.
+Neither language has header files, package boilerplate, and so on.
+Both are primarily developed with a text editor—not an IDE.
+In both, functions are first-class citizens, which can be passed as arguments.
+
+These are the key differences:
+
+Possibly the biggest difference is that JavaScript is single-threaded and non-blocking, using asynchronous I/O. This means that simple things like file access involve the use of a callback function.
+JS is used essentially in web development and until very recently was browser-bound,2 but Python is used almost everywhere.
+JS is the only first-class language in web browsers, Python being excluded.
+Python has a comprehensive standard library, whereas JS has a limited set of utility objects (e.g., JSON, Math).
+Python has fairly classical object-oriented classes, whereas JS uses prototypes.
+JS lacks general-purpose data-processing libs.3
+
+The differences here emphasize the need for this book to bebi-lingual. JavaScript’s monopoly of browser dataviz needs the complement of aconventional data-processing stack. And Python has the best there is.
