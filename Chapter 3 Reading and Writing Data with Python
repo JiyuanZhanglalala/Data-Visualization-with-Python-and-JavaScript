@@ -16,14 +16,11 @@ nobel_winners = [
   'year': 1911}
 ]
 
-f = open('data/nobel_winners.csv', 'w')
+        
 
-cols = nobel_winners[0].keys()
-cols.sort()
+        
+        
+json has the methods loads and dumps, which are counterparts to the file access methods, loading JSON strings to Python containers and dumping Python containers
+to JSON strings.
 
-with open('data/nobel_winners.csv, 'w') as f:
-    f.write(','.join(cols) + '\n') 
-
-    for o in nobel_winners:
-        row = [str(o[col]) for col in cols]
-        f.write(','.join(row) + '\n')
+dump  dumps loads load those are different
