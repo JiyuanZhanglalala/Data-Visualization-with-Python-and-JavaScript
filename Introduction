@@ -1,0 +1,27 @@
+1. Scraping Data with Scrapy
+The first challenge for any data visualizer is getting hold of the data they need, whether by request or to scratch a personal itch. If you’re very lucky, this will be delivered to you in pristine form, but more often than not you have to go find it. I’ll cover the various ways you can use Python to get data off the Web (e.g., web APIs or Google spreadsheets). The Nobel Prize dataset for the toolchain demonstration is scraped from its Wikipedia pages using Scrapy.2
+
+Python’s Scrapy is an industrial-strength scraper that does all the data throttling and media pipelining, which are indispensable if you plan on scraping significant amounts of data. Scraping is often the only way to get the data you are interested in, and once you’ve mastered Scrapy’s workflow, all those previously off-limits datasets are only a spider away.3
+
+2. Cleaning Data with Pandas
+The dirty secret of dataviz is that pretty much all data is dirty, and turning it into something you can use may well occupy a lot more time than anticipated. This is an unglamorous process that can easily steal over half your time, which is all the more reason to get good at it and use the right tools.
+
+Pandas is a huge player in the Python data-processing ecosystem. It’s a Python data-analysis library whose chief component is the DataFrame, essentially a programmatic spreadsheet. Pandas extends NumPy, Python’s powerful numeric library, into the realm of heterogeneous datasets, the kind of categorical, temporal, and ordinal information that data visualizers have to deal with. As well as being great for interactively exploring your data (using its built-in Matplotlib plots), Pandas is well suited to the drudge-work of cleaning data, making it easy to locate duplicate records, fix dodgy date-strings, find missing fields, and so on.
+
+3. Exploring Data with Pandas and Matplotlib
+Before beginning the transformation of your data into a visualization, you need to understand it. The patterns, trends, and anomalies hidden in the data will inform the stories you are trying to tell with it, whether that’s explaining a recent rise in year-by-year widget sales or demonstrating global climate change.
+
+In conjunction with IPython, the Python interpreter on steroids, Pandas and Matplotlib (with additions such as Seaborn) provide a great way to explore your data interactively, generating rich, inline plots from the command line, slicing and dicing your data to reveal interesting patterns. The results of these explorations can then be easily saved to file or database to be passed on to your JavaScript visualization.
+
+4. Delivering Your Data with FlaskOnce you’ve explored and refined your data, you’ll need to serve it to the web browser, where a JavaScript library like D3 can transform it. One of the great strengths of using a general-purpose language like Python is that it’s as comfortable rolling a web server in a few lines of code as it is crunching through large datasets with special-purpose libraries like NumPy and Scipy.4 Flask is Python’s most popular lightweight server and is perfect for creating small, RESTful5 APIs that can be used by JavaScript to get data from the server, in files or databases, to the browser. As I’ll demonstrate, you can roll a RESTful API in a few lines of code, capable of delivering data from SQL or NoSQL databases.
+*******Restful API
+
+5. Transforming Data into Interactive Visualizations with D3
+Once the data is cleaned and refined, we have the visualization phase, where selected reflections of the dataset are presented, ideally allowing the user to explore them interactively. Depending on the data, this might involve bar charts, maps, or novel visualizations.
+
+D3 is JavaScript’s powerhouse visualization library, arguably one of the most powerful visualization tools irrespective of language. We’ll use D3 to create a novel Nobel Prize visualization with multiple elements and user interaction, allowing people to explore the dataset for items of interest. D3 can be challenging to learn, but I hope to bring you quickly up to speed and ready to start honing your skills in the doing.
+
+
+
+
+
