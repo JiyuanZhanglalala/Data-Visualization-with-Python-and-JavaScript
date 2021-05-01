@@ -24,3 +24,8 @@ json has the methods loads and dumps, which are counterparts to the file access 
 to JSON strings.
 
 dump  dumps loads load those are different
+
+
+
+#MangoDB Document website
+https://docs.mongodb.com/manual/tutorial/query-documents/
